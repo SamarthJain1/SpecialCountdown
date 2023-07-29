@@ -1,0 +1,150 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background:
+        linear-gradient(135deg, #0000 20.5%, #808080 0 29.5%, #0000 0) 0 32px,
+        linear-gradient(45deg, #0000 8%, #808080 0 17%, #0000 0 58%) 64px 0,
+        linear-gradient(135deg, #0000 8%, #808080 0 17%, #0000 0 58%, #808080 0 67%, #0000 0),
+        linear-gradient(45deg, #0000 8%, #808080 0 17%, #0000 0 58%, #808080 0 67%, #0000 0 83%, #808080 0 92%, #0000 0),
+        #000000;
+    background-size: 128px 128px;
+
+}
+
+.container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: min(100%, 900px);
+    margin: auto;
+    justify-content: center;
+    border-radius: 25px;
+    margin-top: 60px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(16px);
+    box-shadow: inset 0 0 32px 2.5px #808080, 0 0 32px 2.5px #000000;
+}
+
+.head {
+    text-align: center;
+    font-size: 35px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.time {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.table {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.table input {
+    font-size: 30px;
+    width: 100px;
+    border-radius: 0px 10px;
+    border: none;
+    padding: 40px;
+    text-align: center;
+    margin: 25px
+}
+
+.table .abb {
+    font-size: 30px;
+    margin: 60px;
+}
+
+#start {
+    width: 200px;
+    margin: auto;
+    padding: 12px;
+    color: #000000;
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+@media (max-width:1000px) {
+    .container {
+        padding: 35px;
+        width: 80%;
+        gap: 30px;
+    }
+
+    .table input {
+        font-size: 25px;
+        padding: 10%;
+        text-align: center;
+        margin: 10%;
+        width: 50%;
+    }
+
+    .table .abb {
+        font-size: 30px;
+        margin: 50px;
+    }
+}
+
+@media (max-width:950px) {
+    .table {
+        flex-direction: column;
+        gap: 25px;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .table input {
+        width: 200px;
+        padding: 20px;
+        margin: 0;
+    }
+}
+
+@media (max-width:700px) {
+    .head {
+        font-size: 27px;
+    }
+
+    .table {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .table input {
+        width: 150px;
+    }
+}
+
+@media (max-width:425px) {
+    .head {
+        font-size: 20px;
+    }
+
+    .table {
+        margin-left: 18%;
+        margin-top: 50px;
+    }
+
+    .table input {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        gap: 10px;
+        width: 70%;
+        margin-top: 20px;
+    }
+}

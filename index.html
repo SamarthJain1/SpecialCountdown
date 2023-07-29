@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Your Special Day Countdown</h1>
+        </div>
+        <input type="text" id="start" name="trip-start" placeholder="yyyy-mm-dd" onfocus="(this.type='date')" onblur="(this.type='text')" min="1950-01-01" max="2050-12-31">
+
+        <div class="table">
+            <div class="cell">
+                <input type="text" value="0" readonly>
+                <span class="abb">Days</span>
+            </div>
+            <div class="cell">
+                <input type="text" value="0" readonly>
+                <span class="abb">Hours</span>
+            </div>
+            <div class="cell">
+                <input type="text" value="0" readonly>
+                <span class="abb">Minutes</span>
+            </div>
+            <div class="cell">
+                <input type="text" value="0" readonly>
+                <span class="abb">Seconds</span>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="JS/index.js"></script>
+
+</body>
+
+</html>
